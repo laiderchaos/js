@@ -12,9 +12,9 @@ const options = {
 };
 
 
-const {border, bg} = options.colors;
+//const {border, bg} = options.colors;
 
-console.log(border);
+//console.log (border);
 
 //let counter = 0;
 //
