@@ -91,14 +91,14 @@ function log(a, b, c) {   ////// Раскладывает значения
 const num = [2, 5, 7];
 //log(...num);
 
-const array = ['a', 'b', 'c'];  //// Метод копирования с помощью spread оператора 
+const array = ['a', 'b', 'c'];
 
-const newArrayy = [...array];
+const newArrayy = [...array];// Метод копирования массива с помощью spread оператора 
 
 
-const q = {
+const q = {     
     one: 1,
     two: 2
 };
 
-const newQ = {...q};
+const newQ = {...q};   // Метод копирования обьекта с помощью spread оператора
