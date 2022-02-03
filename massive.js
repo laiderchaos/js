@@ -65,7 +65,7 @@ const numbers2 = {
 //const newNumbers = copy(numbers);
 //newNumbers.a = 10;
 
-const clone = Object.assign({},numbers);
+const clone = Object.assign({},numbers);  // Создаёт поверхностную копию
 //console.log(clone);
 //console.log(Object.assign(numbers, numbers2));
 
