@@ -1,23 +1,20 @@
 
-let numberOfMovies;
-
-
 let personalMovieDB = {
-    count: numberOfMovies,
+    count: 0,
     movies: {},
     actors: {},
     genres: [],
     privat: false,
-    start: function () {
+    start: () => {
         personalMovieDB.count = +prompt("Cколько фильмов вы уже смотрели?", '');
     
         while (personalMovieDB.count == '' ||
                personalMovieDB.count == null ||
-               personalMovieDB.count == isNaN(numberOfMovies)) {
+               personalMovieDB.count == isNaN(personalMovieDB.count)) {
             personalMovieDB.count = +prompt("Cколько фильмов вы уже смотрели?", '');
         }
     },
-    detectCinephile: function() {
+    detectCinephile: () => {
         if (personalMovieDB.count == null || personalMovieDB.count == '') {
             alert('Мудила блять циферы вводи!');
         } else if (personalMovieDB.count <= 10) {
@@ -30,7 +27,7 @@ let personalMovieDB = {
             alert('Ну ты ебать даёшь!!!');
         }
     },
-    rememberMyFilms: function () {
+    rememberMyFilms: () => {
         for (let i = 0; i < 2; i++) {
             let a = prompt('Какой фильм вы смотрели', ""),
                 b = prompt('Какую оценку вы бы ему дали?', "");
@@ -44,7 +41,7 @@ let personalMovieDB = {
             }
         }
     },
-    writeYourGenres: function () {
+    writeYourGenres: () => {
         let d = 0;
         for ( let i = 1; i < 4; i++){
             let a = prompt(`Ваш любимый жанр ${i} `, '');
@@ -54,17 +51,20 @@ let personalMovieDB = {
                 personalMovieDB.genres[i - 1] = a;
             }
         }
+        personalMovieDB.genres.forEach((i, a) => {
+            console.log(`Любимый жанр ${a + 1} - это ${i}`);
+        });
     },
-    showMyDB: function () {
+    showMyDB: () => {
         if (personalMovieDB.privat === false) {
             console.log(personalMovieDB);
         }
     },
-    toggleVisibleMyDB: function () {
-        if (personalMovieDB.privat === false){
-            personalMovieDB.privat = true;
-        } else {
+    toggleVisibleMyDB: () => {
+        if (personalMovieDB.privat){
             personalMovieDB.privat = false;
+        } else {
+            personalMovieDB.privat = true;
         }
     }
     
@@ -76,9 +76,7 @@ let personalMovieDB = {
 personalMovieDB.writeYourGenres();
 //personalMovieDB.toggleVisibleMyDB();
 personalMovieDB.showMyDB();
-personalMovieDB.genres.forEach(function(i, a) {
-    console.log(`Любимый жанр ${i} - это ${a+1}`);
-});
+
 
 
 
