@@ -12,8 +12,8 @@ function second() {
     console.log(2);
 }
 
-first();
-second();
+//first();
+//second();
 
 function learnJS(leng, callback) {
     console.log(`Я учу: ${leng}.`);
@@ -24,4 +24,4 @@ function done() {
     console.log('Я прошел этот урок!');
 }
 
-learnJS('JS', done);
+//learnJS('JS', done);

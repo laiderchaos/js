@@ -31,4 +31,4 @@ const options = {
 //
 //console.log(counter); 
 
-console.log(Object.keys(options).length);
+//console.log(Object.keys(options).length);
