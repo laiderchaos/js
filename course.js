@@ -73,9 +73,9 @@ let personalMovieDB = {
 //personalMovieDB.start();
 //personalMovieDB.detectCinephile();
 //personalMovieDB.rememberMyFilms();
-personalMovieDB.writeYourGenres();
+//personalMovieDB.writeYourGenres();
 //personalMovieDB.toggleVisibleMyDB();
-personalMovieDB.showMyDB();
+//personalMovieDB.showMyDB();
 
 
 
