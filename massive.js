@@ -1,5 +1,5 @@
-const arr = [21, 12, 33, 14, 4, 9];
-arr.sort(compareNum);
+//const arr = [21, 12, 33, 14, 4, 9];
+//arr.sort(compareNum);
 //console.log(arr);
 
 function compareNum(a, b) {
@@ -88,7 +88,7 @@ function log(a, b, c) {   ////// Раскладывает значения
     console.log(c);
 }
 
-const num = [2, 5, 7];
+//const num = [2, 5, 7];
 //log(...num);
 
 const array = ['a', 'b', 'c'];
@@ -101,4 +101,7 @@ const q = {
     two: 2
 };
 
+
 const newQ = {...q};   // Метод копирования обьекта с помощью spread оператора
+
+

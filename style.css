@@ -13,6 +13,7 @@ body {
   width: 200px;
   height: 200px;
   margin: 10px;
+  display: flex;
 }
 
 h1{
@@ -23,6 +24,7 @@ h1{
     font-size: 20px;
     margin: 5px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .circle{
@@ -31,4 +33,14 @@ h1{
   height: 150px;
   border-radius: 100%;
   margin: 10px;
+}
+
+.squares {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.wrapper {
+  display: flexbox;
 }
